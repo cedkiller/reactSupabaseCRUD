@@ -47,7 +47,7 @@ function Edit () {
     const submit = async (e) => {
         e.preventDefault();
 
-        const {data, error} = await supabase.from('record').update({task}).eq('id',id);
+        const {data, error} = await supabase.from('record').update({task:task}).eq('id',id);
 
         if (error) {
             Swal.fire({
