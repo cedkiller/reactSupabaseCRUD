@@ -31,7 +31,7 @@ function Home () {
     const submit = async (e) => {
         e.preventDefault();
 
-        const {data, error} = await supabase.from('record').insert([{task}]);
+        const {data, error} = await supabase.from('record').insert({task:task});
 
         if (error) {
             Swal.fire({
