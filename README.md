@@ -1,1 +1,1 @@
-# supabaseCRUD
+# reactSupabaseCRUD
